@@ -26,7 +26,7 @@ router.put('/update/:id', async (req, res) => {
   try {
     let response = await UserService.updateUser(
       req.params.id,
-      req.body.usernamem,
+      req.body.username,
       req.body.email,
       req.body.password
     )
